@@ -1,0 +1,74 @@
+[
+  {
+    "Book_Code": "1",
+    "Book_name": "Head First Design Patterns",
+    "Author": [
+      "Eric Freeman",
+      "Elisabeth Robson",
+      "Bert bates",
+      "Kathy Sierra"
+    ],
+    "Publisher_name": "O'Reilly Media",
+    "Year_Of_Publication": "2020",
+    "type_of_book": "Textbook",
+    "Cost": 2878
+  },
+  {
+    "Book_Code": "2",
+    "Book_name": "Data Structures And Algorithms in Python,3rd Edition",
+    "Author": [
+      "Michael T.Goodrich",
+      "Roberto Tamassia",
+      "Michael H.Goldwasser"
+    ],
+    "Publisher_name": "Peasron",
+    "Year_Of_Publication": "2020",
+    "type_of_book": "Textbook",
+    "Cost": 350
+  },
+  {
+    "Book_Code": "3",
+    "Book_name": "The Elements of Style",
+    "Author": [
+      "William Strunk Jr.",
+      "E.B. White"
+    ],
+    "Publisher_name": "Allyn & Bacon",
+    "Year_Of_Publication": "2018",
+    "type_of_book": "Reference",
+    "Cost": 1072
+  },
+  {
+    "Book_Code": "4",
+    "Book_name": "Cracking the Coding Interview: 189 Programming Questions and Solutions",
+    "Author": [
+      "Gayle Laakmann McDowell"
+    ],
+    "Publisher_name": "CareerCup",
+    "Year_Of_Publication": "2020",
+    "type_of_book": "Reference",
+    "Cost": 2313
+  },
+  {
+    "Book_Code": "5",
+    "Book_name": "The Economist: The World in 2023",
+    "Author": [
+      "The Economist"
+    ],
+    "Publisher_name": "The Economist",
+    "Year_Of_Publication": "2022",
+    "type_of_book": "Periodicals",
+    "Cost": 879
+  },
+  {
+    "Book_Code": "6",
+    "Book_name": "Scientific American: 50th Anniversary Edition",
+    "Author": [
+      "Scientific American"
+    ],
+    "Publisher_name": "Scientific American",
+    "Year_Of_Publication": "2022",
+    "type_of_book": "Periodicals",
+    "Cost": 1623
+  }
+]
