@@ -468,6 +468,79 @@
       "dimension": { "height": 13, "width": 44, "weight": 160 },
       "price": 247647
     }
-  ]
+  ],
  
+
+  [
+    {
+      "product_id": 1,
+      "product_name": "Pencil",
+      "product_type": "Stationary",
+      "cost_unit": 9,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 2,
+      "product_name": "Notebook",
+      "product_type": "Stationary",
+      "cost_unit": 59,
+      "qty_in_stock": 50
+    },
+    {
+      "product_id": 3,
+      "product_name": "Laptop",
+      "product_type": "Electronics",
+      "cost_unit": 30999,
+      "qty_in_stock": 20
+    },
+    {
+      "product_id": 4,
+      "product_name": "Tablet",
+      "product_type": "Electronics",
+      "cost_unit": 38999,
+      "qty_in_stock": 50
+    },
+    {
+      "product_id": 5,
+      "product_name": "Chair",
+      "product_type": "Furniture",
+      "cost_unit": 2999,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 6,
+      "product_name": "Book",
+      "product_type": "Stationary",
+      "cost_unit": 299,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 7,
+      "product_name": "Mobile Phone",
+      "product_type": "Electronics",
+      "cost_unit": 29599,
+      "qty_in_stock": 50
+    },
+    {
+      "product_id": 8,
+      "product_name": "Sofa",
+      "product_type": "Home Decor",
+      "cost_unit": 7999,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 9,
+      "product_name": "Bed",
+      "product_type": "Furniture",
+      "cost_unit": 8999,
+      "qty_in_stock": 100
+    },
+    {
+      "product_id": 10,
+      "product_name": "Headphones",
+      "product_type": "Electronics",
+      "cost_unit": 1599,
+      "qty_in_stock": 100
+    }
+  ]
 ]
