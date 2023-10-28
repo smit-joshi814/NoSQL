@@ -360,7 +360,65 @@ db.Products.aggregate({
 db.Products.find({},{_id:0,product_name:1,product_type:1,cost_unit:1}).limit(1).skip(1);
 
 // 3. display costliest product for all categories
-db.Products.find();
+db.Products.aggregate({ $group: { _id: "$product_type", costliest: { $max: "$cost_unit" }, product_name:{$first:"$product_name"} } });
+
+// 4. add new field discount_offered for those furniture having price between 15k to 20k
+db.Products.updateMany({ $and: [
+  {"product_type": "Furniture"},
+  {"cost_unit": { $lt: 15000 } },
+  {"cost_unit": { $gt: 20000 } }
+  ]},{
+  $set: {
+      "discount_offered": 0
+  }
+});
+
+
+// 5. display those electronics products price having lover then 25k , store in array and print using appropriate method
+var arr = db.Products.find({ "cost_unit": { $lt: 25000 } });
+var electronics=[];
+arr.forEach(val => {
+  electronics.push(val)
+});
+// arr.toArray();
+// print(arr.toArray());
+print(electronics)
+
+// 6. update cost_unit of Electronics category by giving discount of 1000
+db.Products.updateMany({"product_type":"Electronics"},{$inc:{cost_unit:-1000}});
+
+
+// 7. delete qty_in_stock for all whose cost lies b/w 500 t0 800
+db.Products.updateMany({$and:[
+  {"cost_unit":{$gte:500}},
+  {"cost_unit":{$lte:800}}
+]},{$unset:"qty_in_stock"});
+
+
+// 8. add new column "Reorder Qty" to the collection
+db.Products.updateMany({},{$set:{"Reorder_Qty":""}});
+
+// 9. Using map reduce display the product details such as Product name and cost for products belonging to Stationary Category
+  //Mapper
+var mapFunction = function() {
+  if (this.product_type === "Stationary") {
+      emit(this.product_name, this.cost_unit);
+  }
+}
+//reducer
+var reduceFunction = function(key, value) {
+  return Array(value)
+}
+//mapReduce
+db.Products.mapReduce(mapFunction, reduceFunction, {
+  out: "products"
+});
+//output variable
+db.products.find();
+
+// 10. Create an index on given collection
+db.Products.createIndex({product_name:1});
+
 
 
 
